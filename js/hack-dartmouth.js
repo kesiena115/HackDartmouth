@@ -13,16 +13,16 @@ $(document).ready(function(){
 
   $("#phone").intlTelInput({
     allowExtensions: false,
-    autoFormat: false,
+    autoFormat: true,
     autoHideDialCode: false,
     autoPlaceholder: true,
     defaultCountry: "ng",
     ipinfoToken: "yolo",
-    nationalMode: false,
+    nationalMode: true,
     numberType: "MOBILE",
     onlyCountries: ['ng', 'us', 'gb'],
     preferredCountries: [],
-    // utilsScript: "libphonenumber/build/utils.js" //commented out to stop complain "XMLHttpRequest cannot load...Cross origin requests are only supported for protocol schemes: http, data,"
+    utilsScript: "../intl-tel-input-master/lib/libphonenumber/build/utils.js" //investigate! 
   });
 
 
