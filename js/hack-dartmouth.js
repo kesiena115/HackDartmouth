@@ -22,7 +22,7 @@ $(document).ready(function(){
     numberType: "MOBILE",
     onlyCountries: ['ng', 'us', 'gb'],
     preferredCountries: [],
-    utilsScript: "../intl-tel-input-master/lib/libphonenumber/build/utils.js" //investigate! 
+    utilsScript: "/projects/intl-tel-input-master/lib/libphonenumber/build/utils.js" 
   });
 
 

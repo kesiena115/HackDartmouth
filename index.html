@@ -42,32 +42,32 @@
               <option value="Mrs">Mrs</option>
               <option value="Ms">Ms</option>
             </select>
-            <label for="firstName" class="sr-only">First Name</label>
-            <input type="text" id="firstName" class="form-control" placeholder="First Name" required>
-            <label for="lastName" class="sr-only">Last Name</label>
-            <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
-            <label for="channel-create" class="sr-only">Channel ID</label>
-            <input type="text" id="channel-create" class="form-control" placeholder="Channel ID" required>
+            <input type="text" class="form-control" placeholder="First Name" required>
+            <input type="text" class="form-control" placeholder="Last Name" required>
+            <input type="text" class="form-control" placeholder="Channel ID" required>
             <div id="channelID-feedback">
               <p>Channel ID Feedback</p>
             </div>
-            <label for="password-create" class="sr-only">Password</label>
-            <input type="password" id="password-create" class="form-control" placeholder="Password" required>
+            <input type="password" class="form-control" placeholder="Password" required>
           </form>
-          <input id="phone" type="tel">
-
+          <input type="tel" class="form-control" required>
+          <div id="phone-ready">
+            <p>Please have your phone ready to receive SMS</p>
+          </div>
+          <p><input type="checkbox" name="terms" required > Accept <a href="/pages/terms-and-conditions">terms and conditions</a>. </p>
+          <button class="btn btn-lg btn-primary btn-block front-button" type="reset">Cancel</button>
+          <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Submit</button>
+          
 
           <form class="form-signin">
             <h3 class="form-signin-heading">Login</h3>
-            <label for="channel-login" class="sr-only">Channel ID</label>
-            <input type="text" id="channel-login" class="form-control" placeholder="Channel ID" required autofocus>
-            <label for="password-login" class="sr-only">Password</label>
-            <input type="password" id="password-login" class="form-control" placeholder="Password" required>
+            <input type="text" class="form-control" placeholder="Channel ID" required autofocus>
+            <input type="password" class="form-control" placeholder="Password" required>
             <div class="forgot-password">
               <a href="#">Forgot your password?</a>
 
             </div>
-            <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Sign in</button>
+            <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Login</button>
           </form>
         </div>  <!-- /col bootstrap -->
       </div>  <!-- /row -->
