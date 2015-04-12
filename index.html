@@ -3,26 +3,82 @@
 
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<title>HackDartmouth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OneText</title>
 
-    <!-- Load style sheets -->
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
     <link href="css/hack-dartmouth.css" rel="stylesheet">
+    <!-- International Telephone Input -->
+    <link rel="stylesheet" href="css/intlTelInput.css" rel="stylesheet">
 	
 	<!-- Load JavaScript -->
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
     <script src="js/hack-dartmouth.js"></script>
+
 </head>
 
 <body>
-	<!-- Insert html here-->
+	
 	<script type="text/javascript">
 		$(document).ready(function() {
 			
 
 		});
 	</script>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-7 col-md-4 col-xs-12">
+          <form class="form-create-account">
+            <h3 class="form-create-account-heading">Create Account</h3>
+            <div class="dropdown-account">
+              <button class="btn btn-default dropdown-toggle front-button" data-toggle="dropdown-account" id="account-type"> Select Account Type <span class="caret"></span></button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="account">
+                <li id="person-account"> <a href="#">Person</a></li>
+                <li id="org-account"> <a href="#">Organization</a></li>
+              </ul>
+            </div>      
+            <select name="title-list" form="title-form">
+              <option value="None">Select Title</option>
+              <option value="Dr">Dr</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Ms">Ms</option>
+            </select>
+            <label for="firstName" class="sr-only">First Name</label>
+            <input type="text" id="firstName" class="form-control" placeholder="First Name" required>
+            <label for="lastName" class="sr-only">Last Name</label>
+            <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+            <label for="channel-create" class="sr-only">Channel ID</label>
+            <input type="text" id="channel-create" class="form-control" placeholder="Channel ID" required>
+            <div id="channelID-feedback">
+              <p>Channel ID Feedback</p>
+            </div>
+            <label for="password-create" class="sr-only">Password</label>
+            <input type="password" id="password-create" class="form-control" placeholder="Password" required>
+          </form>
+          <input id="phone" type="tel">
+
+
+          <form class="form-signin">
+            <h3 class="form-signin-heading">Login</h3>
+            <label for="channel-login" class="sr-only">Channel ID</label>
+            <input type="text" id="channel-login" class="form-control" placeholder="Channel ID" required autofocus>
+            <label for="password-login" class="sr-only">Password</label>
+            <input type="password" id="password-login" class="form-control" placeholder="Password" required>
+            <div class="forgot-password">
+              <a href="#">Forgot your password?</a>
+
+            </div>
+            <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Sign in</button>
+          </form>
+        </div>  <!-- /col bootstrap -->
+      </div>  <!-- /row -->
+    </div> <!-- /container -->
 </body>
 
 </html>
