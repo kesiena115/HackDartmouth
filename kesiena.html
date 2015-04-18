@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OneText</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/hack-dartmouth.css" rel="stylesheet">
+    <!-- International Telephone Input -->
+    <link rel="stylesheet" href="css/intlTelInput.css" rel="stylesheet">
+    
+    <!-- Load JavaScript -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/intlTelInput.js"></script>
+    <script src="js/kesiena.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+      <div class="row">
+      <!-- bootstrap columns -->
+        <div class="col-md-offset-7 col-md-4 col-xs-12">
+          <form class="form-create-account">
+            <h3 class="form-create-account-heading">Create Account</h3>
+            <div class="dropdown-account">
+              <button type="button" class="btn btn-default dropdown-toggle" s> Select Account Type <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li> <a href="#">Person</a></li>
+                <li> <a href="#">Organization</a></li>
+              </ul>
+            </div>      
+            <select name="title-list" form="title-form">
+              <option value="None">Select Title</option>
+              <option value="Dr">Dr</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Ms">Ms</option>
+            </select>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+            <input type="text" class="form-control" placeholder="Channel ID">
+            <div id="channelID-feedback">
+              <p>Channel ID Feedback</p>
+            </div>
+            <input type="password" class="form-control" placeholder="Password">
+          </form>
+          <!-- next line will be used for jquery plugin. Keep id there -->
+          <input type="tel" id="phone" class="form-control"> 
+          <div id="phone-ready">
+            <p>Please have your phone ready to receive SMS</p>
+          </div>
+          <p><input type="checkbox" name="terms" required > Accept <a href="/pages/terms-and-conditions">terms and conditions</a>. </p>
+          <button class="btn btn-lg btn-primary btn-block front-button" type="reset">Cancel</button>
+          <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Submit</button>
+          
+
+          <form class="form-signin">
+            <h3 class="form-signin-heading">Login</h3>
+            <input type="text" class="form-control" placeholder="Channel ID" autofocus>
+            <input type="password" class="form-control" placeholder="Password">
+            <div class="forgot-password">
+              <a href="#">Forgot your password?</a>
+
+            </div>
+            <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Login</button>
+          </form>
+        </div>  <!-- /col bootstrap -->
+      </div>  <!-- /row -->
+    </div> <!-- /container -->
+</body>
+
+</html>
