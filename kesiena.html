@@ -29,11 +29,11 @@
         <div class="col-md-offset-7 col-md-4 col-xs-12">
           <form class="form-create-account">
             <h3 class="form-create-account-heading">Create Account</h3>
-            <div class="dropdown-account">
-              <button type="button" class="btn btn-default dropdown-toggle" s> Select Account Type <span class="caret"></span></button>
+            <div class="dropdown">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="account-type"> Select Account Type <span class="caret"></span></button>
               <ul class="dropdown-menu">
-                <li> <a href="#">Person</a></li>
-                <li> <a href="#">Organization</a></li>
+                <li> <a href="#" id="person-account">Person</a></li>
+                <li> <a href="#" id="org-account">Organization</a></li>
               </ul>
             </div>      
             <select name="title-list" form="title-form">
