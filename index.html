@@ -29,47 +29,62 @@
         <div class="col-md-offset-7 col-md-4 col-xs-12">
           <form class="form-create-account">
             <h3 class="form-create-account-heading">Create Account</h3>
-            <div class="dropdown-account">
-              <button type="button" class="btn btn-default dropdown-toggle" s> Select Account Type <span class="caret"></span></button>
+            <div class="dropdown">
+              <button type="button" class="btn btn-default dropdown-toggle blue-btn" data-toggle="dropdown" id="account-type"> Select Account Type <span class="caret"></span></button>
               <ul class="dropdown-menu">
-                <li> <a href="#">Person</a></li>
-                <li> <a href="#">Organization</a></li>
+                <li id="person-account"> <a href="#">Person</a></li>
+                <li id="org-account"> <a href="#">Organization</a></li>
               </ul>
-            </div>      
-            <select name="title-list" form="title-form">
-              <option value="None">Select Title</option>
-              <option value="Dr">Dr</option>
-              <option value="Mr">Mr</option>
-              <option value="Mrs">Mrs</option>
-              <option value="Ms">Ms</option>
-            </select>
+            </div>
+            <div class="dropdown">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="title-select"> Select Title <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li id="dr-title"> <a href="#">Dr</a></li>
+                <li id="mr-title"> <a href="#">Mr</a></li>
+                <li id="mrs-title"> <a href="#">Mrs</a></li>
+                <li id="miss-title"> <a href="#">Miss</a></li>
+              </ul>
+            </div>       
             <input type="text" class="form-control" placeholder="First Name">
             <input type="text" class="form-control" placeholder="Last Name">
-            <input type="text" class="form-control" placeholder="Channel ID">
+            <input type="text" class="form-control" placeholder="Organization Name">
+            <div class="dropdown">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="industry-select"> Industry <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li id="business-org"> <a href="#">Business</a></li>
+                <li id="edu-org"> <a href="#">Education</a></li>
+                <li id="govern-org"> <a href="#">Government Administration</a></li>
+                <li id="religious-org"> <a href="#">Religious Institution</a></li>
+                <li id="social-org"> <a href="#">Social Group</a></li>
+                <li id="other-org"> <a href="#">Other</a></li>
+              </ul>
+            </div>       
+            
+            <label for="inputChannel" >Should be short and easy to remember e.g. john1
+</label>
+            <input type="text" id="inputChannel" class="form-control" placeholder="Channel ID">
             <div id="channelID-feedback">
               <p>Channel ID Feedback</p>
             </div>
             <input type="password" class="form-control" placeholder="Password">
-          </form>
           <!-- next line will be used for jquery plugin. Keep id there -->
           <input type="tel" id="phone" class="form-control"> 
           <div id="phone-ready">
             <p>Please have your phone ready to receive SMS</p>
           </div>
-          <p><input type="checkbox" name="terms" required > Accept <a href="/pages/terms-and-conditions">terms and conditions</a>. </p>
-          <button class="btn btn-lg btn-primary btn-block front-button" type="reset">Cancel</button>
-          <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Submit</button>
-          
+          <p><input type="checkbox" name="terms" required > Accept OneText<a href="/pages/terms-and-conditions"> terms and conditions</a> </p>
+          <button class="btn btn-lg btn-primary btn-block front-button blue-btn" type="submit">Join Now</button>
+          </form>
 
           <form class="form-signin">
             <h3 class="form-signin-heading">Login</h3>
-            <input type="text" class="form-control" placeholder="Channel ID" autofocus>
-            <input type="password" class="form-control" placeholder="Password">
+            <input type="text" class="form-control" placeholder="Channel ID" autofocus required>
+            <input type="password" class="form-control" placeholder="Password" required>
             <div class="forgot-password">
               <a href="#">Forgot your password?</a>
 
             </div>
-            <button class="btn btn-lg btn-primary btn-block front-button" type="submit">Login</button>
+            <button class="btn btn-lg btn-primary btn-block front-button blue-btn" type="submit">Login</button>
           </form>
         </div>  <!-- /col bootstrap -->
       </div>  <!-- /row -->

@@ -46,3 +46,22 @@ body {
   background-image: url("../img/flags.png");
 }
 
+.blue-btn {
+  background: white;
+  color: #4285f4;
+  border: 2px solid #4285f4;
+}
+
+a {
+  color: #4285f4;
+}
+
+.blue-btn:hover, .blue-btn.dropdown-toggle:hover, .dropdown.open > .blue-btn{
+  background: #4285f4;
+  color: white;
+  border: 2px solid #4285f4;
+}
+
+#channelID-feedback {
+  display: none;
+}
