@@ -65,3 +65,9 @@ a {
 #channelID-feedback {
   display: none;
 }
+
+.width-80pct {
+  width:80%;
+  text-align: left;
+  position: relative;
+}

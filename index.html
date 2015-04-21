@@ -7,11 +7,13 @@
 	<title>OneText</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom styles for this template -->
-    <link href="css/hack-dartmouth.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hack-dartmouth.css">
     <!-- International Telephone Input -->
     <link rel="stylesheet" href="css/intlTelInput.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
 	
 	<!-- Load JavaScript -->
     <script src="js/jquery-1.11.2.min.js"></script>
@@ -26,18 +28,18 @@
     <div class="container">
       <div class="row">
       <!-- bootstrap columns -->
-        <div class="col-md-offset-7 col-md-4 col-xs-12">
+        <div class="col-md-offset-7 col-md-3 col-xs-12">
           <form class="form-create-account">
             <h3 class="form-create-account-heading">Create Account</h3>
             <div class="dropdown">
-              <button type="button" class="btn btn-default dropdown-toggle blue-btn" data-toggle="dropdown" id="account-type"> Select Account Type <span class="caret"></span></button>
+              <button type="button" class="btn btn-default dropdown-toggle blue-btn width-80pct" data-toggle="dropdown" id="account-type"> Select Account Type <i class="fa fa-caret-down pull-right"></i></button>
               <ul class="dropdown-menu">
                 <li id="person-account"> <a href="#">Person</a></li>
                 <li id="org-account"> <a href="#">Organization</a></li>
               </ul>
             </div>
             <div class="dropdown">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="title-select"> Select Title <span class="caret"></span></button>
+              <button type="button" class="btn btn-default dropdown-toggle width-80pct" data-toggle="dropdown" id="title-select"> Select Title <i class="fa fa-caret-down pull-right"></i></button>
               <ul class="dropdown-menu">
                 <li id="dr-title"> <a href="#">Dr</a></li>
                 <li id="mr-title"> <a href="#">Mr</a></li>
@@ -49,7 +51,7 @@
             <input type="text" class="form-control" placeholder="Last Name">
             <input type="text" class="form-control" placeholder="Organization Name">
             <div class="dropdown">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="industry-select"> Industry <span class="caret"></span></button>
+              <button type="button" class="btn btn-default dropdown-toggle width-80pct" data-toggle="dropdown" id="industry-select"> Industry <i class="fa fa-caret-down pull-right"></i></button>
               <ul class="dropdown-menu">
                 <li id="business-org"> <a href="#">Business</a></li>
                 <li id="edu-org"> <a href="#">Education</a></li>
@@ -68,7 +70,7 @@
             </div>
             <input type="password" class="form-control" placeholder="Password">
           <!-- next line will be used for jquery plugin. Keep id there -->
-          <input type="tel" id="phone" class="form-control"> 
+          <input type="tel" id="phone" class="form-control width-80pct"> 
           <div id="phone-ready">
             <p>Please have your phone ready to receive SMS</p>
           </div>
