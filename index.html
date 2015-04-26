@@ -33,13 +33,13 @@
             <h3 class="form-create-account-heading">Create Account</h3>
             <div class="dropdown">
               <button type="button" class="btn btn-default dropdown-toggle blue-btn width-80pct" data-toggle="dropdown" id="account-type"> Select Account Type <i class="fa fa-caret-down pull-right"></i></button>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" id="account-list">
                 <li id="person-account"> <a href="#">Person</a></li>
                 <li id="org-account"> <a href="#">Organization</a></li>
               </ul>
             </div>
-            <div class="dropdown">
-              <button type="button" class="btn btn-default dropdown-toggle width-80pct" data-toggle="dropdown" id="title-select"> Select Title <i class="fa fa-caret-down pull-right"></i></button>
+            <div class="dropdown person-info">
+              <button type="button" class="btn btn-default dropdown-toggle width-80pct " data-toggle="dropdown" id="title-select"> Select Title <i class="fa fa-caret-down pull-right"></i></button>
               <ul class="dropdown-menu">
                 <li id="dr-title"> <a href="#">Dr</a></li>
                 <li id="mr-title"> <a href="#">Mr</a></li>
@@ -47,10 +47,10 @@
                 <li id="miss-title"> <a href="#">Miss</a></li>
               </ul>
             </div>       
-            <input type="text" class="form-control" placeholder="First Name">
-            <input type="text" class="form-control" placeholder="Last Name">
-            <input type="text" class="form-control" placeholder="Organization Name">
-            <div class="dropdown">
+            <input type="text" class="form-control person-info" placeholder="First Name">
+            <input type="text" class="form-control person-info" placeholder="Last Name">
+            <input type="text" class="form-control org-info" placeholder="Organization Name">
+            <div class="dropdown org-info">
               <button type="button" class="btn btn-default dropdown-toggle width-80pct" data-toggle="dropdown" id="industry-select"> Industry <i class="fa fa-caret-down pull-right"></i></button>
               <ul class="dropdown-menu">
                 <li id="business-org"> <a href="#">Business</a></li>
@@ -62,20 +62,20 @@
               </ul>
             </div>       
             
-            <label for="inputChannel" >Should be short and easy to remember e.g. john1
+            <label class="person-org-info" for="inputChannel" >Should be short and easy to remember e.g. john1
 </label>
-            <input type="text" id="inputChannel" class="form-control" placeholder="Channel ID">
-            <div id="channelID-feedback">
+            <input type="text" id="inputChannel" class="form-control person-org-info" placeholder="Channel ID">
+            <div class="person-org-info" id="channelID-feedback">
               <p>Channel ID Feedback</p>
             </div>
-            <input type="password" class="form-control" placeholder="Password">
-          <!-- next line will be used for jquery plugin. Keep id there -->
+            <input type="password" class="form-control person-org-info" placeholder="Password">
+          <!-- next line will be used for jquery intlTelInput library. The library needs the specified ID (do not change or delete this ID). Note that the library would place the input in a div that would have class "intl-tel-input". -->
           <input type="tel" id="phone" class="form-control width-80pct"> 
-          <div id="phone-ready">
+          <div class= "person-org-info" id="phone-ready">
             <p>Please have your phone ready to receive SMS</p>
           </div>
-          <p><input type="checkbox" name="terms" required > Accept OneText<a href="/pages/terms-and-conditions"> terms and conditions</a> </p>
-          <button class="btn btn-lg btn-primary btn-block front-button blue-btn" type="submit">Join Now</button>
+          <p class="person-org-info"> <input type="checkbox" name="terms" required > Accept OneText<a href="/pages/terms-and-conditions"> terms and conditions</a> </p>
+          <button class="btn btn-lg btn-primary btn-block front-button blue-btn person-org-info" type="submit">Join Now</button>
           </form>
 
           <form class="form-signin">

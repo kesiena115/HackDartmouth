@@ -64,5 +64,25 @@ $(document).ready(function(){
     utilsScript: "js/intlTelIutils.js" 
   });
 
+  hideAllOptionalFields();
+
+  $('#account-list li a').on('click', function(){
+    var account = $(this).text();
+    switch (account) {
+        case 'Person':
+            hideAllOptionalFields();
+            $(".person-info, .person-org-info, .intl-tel-input").show();
+        break;
+        case 'Organization':
+            hideAllOptionalFields();
+            $(".org-info, .person-org-info, .intl-tel-input").show();
+        break;
+    }
+  });
 
 });
+
+function hideAllOptionalFields() {
+    //.intl-tel-input is the class used by the intlTelInput library
+    $(".person-org-info, .person-info, .org-info, .intl-tel-input").hide();
+  }
